@@ -1,321 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luzz Pickleball - Elevate Your Game</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f5f5f7; /* Light grey background similar to Apple */
-            color: #1d1d1f; /* Dark text color */
-        }
-        /* Custom scroll-behavior for smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-        .nav-link:hover {
-            color: #007aff; /* Apple blue on hover */
-        }
-        .btn-primary {
-            background-color: #007aff; /* Apple blue */
-            color: white;
-            transition: background-color 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #005bb5; /* Darker blue on hover */
-        }
-        .footer-link:hover {
-            text-decoration: underline;
-            color: #007aff;
-        }
-        /* Custom styles for product cards */
-        .product-card {
-            background-color: white;
-            border-radius: 1rem; /* More rounded corners */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
-<body class="antialiased">
-
-    <header class="bg-white shadow-sm py-4 px-6 md:px-12 sticky top-0 z-50">
-        <nav class="container mx-auto flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold text-gray-900">Luzz Pickleball</a>
-
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <ul id="desktop-menu" class="hidden md:flex space-x-8">
-                <li><a href="#home" class="nav-link text-gray-700 font-medium">Home</a></li>
-                <li><a href="#paddle-set-sale" class="nav-link text-gray-700 font-medium">Paddle Set Sale</a></li>
-                <li><a href="#pickleball-paddle" class="nav-link text-gray-700 font-medium">Pickleball Paddle</a></li>
-                <li><a href="#pickleball-bag" class="nav-link text-gray-700 font-medium">Pickleball Bag</a></li>
-                <li><a href="#pickleball-accessories" class="nav-link text-gray-700 font-medium">Pickleball Accessories</a></li>
-                <li><a href="#sponsorship-dealer" class="nav-link text-gray-700 font-medium">Sponsorship & Dealer</a></li>
-            </ul>
-        </nav>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-white mt-4 rounded-lg shadow-lg">
-            <ul class="flex flex-col space-y-2 p-4">
-                <li><a href="#home" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Home</a></li>
-                <li><a href="#paddle-set-sale" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Paddle Set Sale</a></li>
-                <li><a href="#pickleball-paddle" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Pickleball Paddle</a></li>
-                <li><a href="#pickleball-bag" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Pickleball Bag</a></li>
-                <li><a href="#pickleball-accessories" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Pickleball Accessories</a></li>
-                <li><a href="#sponsorship-dealer" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Sponsorship & Dealer</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <main>
-        <section id="home" class="relative h-screen flex items-center justify-center text-center bg-gray-200 overflow-hidden">
-            <img src="https://placehold.co/1920x1080/E0E0E0/333333?text=Luzz+Pickleball+Hero" alt="Pickleball Court" class="absolute inset-0 w-full h-full object-cover opacity-80">
-            <div class="relative z-10 p-6 max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">Elevate Your Pickleball Game</h1>
-                <p class="text-xl md:text-2xl text-gray-700 mb-8">Discover Luzz's premium collection of pickleball paddles and accessories, designed for superior performance and elegant style.</p>
-                <a href="#pickleball-paddle" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block shadow-lg hover:shadow-xl">Explore Now</a>
-            </div>
-        </section>
-
-        <section id="paddle-set-sale" class="py-16 px-6 md:px-12 bg-white">
-            <div class="container mx-auto">
-                <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Pickleball Paddle Set Sale</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/400x300/F0F0F0/333333?text=Paddle+Set+A" alt="Paddle Set A" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Premium Pickleball Set</h3>
-                        <p class="text-gray-700 mb-4">Perfect for beginners and intermediate players. Includes 2 paddles and 4 balls.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$39.99 <span class="text-lg text-gray-500 line-through">$49.99</span></p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
-                    </div>
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/400x300/F0F0F0/333333?text=Paddle+Set+B" alt="Paddle Set B" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Pro Performance Set</h3>
-                        <p class="text-gray-700 mb-4">Designed for maximum performance, with T700 carbon paddles and a carry bag.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$79.99 <span class="text-lg text-gray-500 line-through">$99.99</span></p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
-                    </div>
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/400x300/F0F0F0/333333?text=Paddle+Set+C" alt="Paddle Set C" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Family Fun Set</h3>
-                        <p class="text-gray-700 mb-4">4 paddles and 6 balls, ideal for family and friends.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$69.99 <span class="text-lg text-gray-500 line-through">$89.99</span></p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
-                    </div>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luzz Pickleball - Elevate Your Game</title>
+        <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+        <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap)" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+                background-color: #f5f5f7; /* Light grey background similar to Apple */
+                color: #1d1d1f; /* Dark text color */
+            }
+            /* Custom scroll-behavior for smooth scrolling */
+            html {
+                scroll-behavior: smooth;
+            }
+            .nav-link:hover {
+                color: #007aff; /* Apple blue on hover */
+            }
+            .btn-primary {
+                background-color: #007aff; /* Apple blue */
+                color: white;
+                transition: background-color 0.3s ease;
+            }
+            .btn-primary:hover {
+                background-color: #005bb5; /* Darker blue on hover */
+            }
+            .footer-link:hover {
+                text-decoration: underline;
+                color: #007aff;
+            }
+            /* Custom styles for product cards */
+            .product-card {
+                background-color: white;
+                border-radius: 1rem; /* More rounded corners */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .product-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+    
+        <header class="bg-white shadow-sm py-4 px-6 md:px-12 sticky top-0 z-50">
+            <nav class="container mx-auto flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold text-gray-900">Luzz Pickleball</a>
+    
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </section>
-
-        <section id="pickleball-paddle" class="py-16 px-6 md:px-12 bg-gray-100">
-            <div class="container mx-auto">
-                <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Pickleball Paddles</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/300x250/E0E0E0/333333?text=Luzz+Pro+Paddle" alt="Luzz Pro Paddle" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Luzz Pro T700 Carbon</h3>
-                        <p class="text-gray-700 mb-4">Optimal power and precision for professional players.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$50.00</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">View Details</button>
-                    </div>
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/300x250/E0E0E0/333333?text=Luzz+Ultra+Paddle" alt="Luzz Ultra Paddle" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Luzz Ultra Series</h3>
-                        <p class="text-gray-700 mb-4">Ultra-light design for enhanced speed and control.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$40.00</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">View Details</button>
-                    </div>
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/300x250/E0E0E0/333333?text=Luzz+Beginner+Paddle" alt="Luzz Beginner Paddle" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Luzz Beginner Paddle</h3>
-                        <p class="text-gray-700 mb-4">Easy-to-play, stable paddle, ideal for new players.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$25.00</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">View Details</button>
-                    </div>
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/300x250/E0E0E0/333333?text=Luzz+Infinity+Paddle" alt="Luzz Infinity Paddle" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Luzz Infinity Series</h3>
-                        <p class="text-gray-700 mb-4">The perfect blend of feel and power.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$45.00</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">View Details</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="pickleball-bag" class="py-16 px-6 md:px-12 bg-white">
-            <div class="container mx-auto">
-                <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Pickleball Bags</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/400x300/F0F0F0/333333?text=Pickleball+Tote+Bag" alt="Pickleball Tote Bag" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Pickleball Tote Bag</h3>
-                        <p class="text-gray-700 mb-4">Stylish and convenient, with enough space for paddles and accessories.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$18.00</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
-                    </div>
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/400x300/F0F0F0/333333?text=Pickleball+Duffle+Bag" alt="Pickleball Duffle Bag" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Pickleball Duffle Bag</h3>
-                        <p class="text-gray-700 mb-4">Separate shoe compartment, ideal for all your practice sessions.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$28.00</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
-                    </div>
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/400x300/F0F0F0/333333?text=Pickleball+Backpack" alt="Pickleball Backpack" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Pickleball Backpack</h3>
-                        <p class="text-gray-700 mb-4">Ergonomic design, comfortable for travel.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$35.00</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="pickleball-accessories" class="py-16 px-6 md:px-12 bg-gray-100">
-            <div class="container mx-auto">
-                <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Pickleball Accessories</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/300x250/E0E0E0/333333?text=Pickleballs" alt="Pickleballs" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Pickleballs (3-Pack)</h3>
-                        <p class="text-gray-700 mb-4">High-quality, durable balls for indoor and outdoor play.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$6.00</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
-                    </div>
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/300x250/E0E0E0/333333?text=Paddle+Cover" alt="Paddle Cover" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Pickleball Paddle Cover</h3>
-                        <p class="text-gray-700 mb-4">Protect your paddle from scratches and impacts.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$3.50</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
-                    </div>
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/300x250/E0E0E0/333333?text=Lead+Tape" alt="Lead Tape" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Lead Tape for Weighting</h3>
-                        <p class="text-gray-700 mb-4">Customize your paddle's weight and balance.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$3.00</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
-                    </div>
-                    <div class="product-card p-6 text-center">
-                        <img src="https://placehold.co/300x250/E0E0E0/333333?text=Grip+Tape" alt="Grip Tape" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Overgrip Tape</h3>
-                        <p class="text-gray-700 mb-4">Enhance grip and absorb sweat.</p>
-                        <p class="text-2xl font-bold text-gray-900 mb-4">$2.00</p>
-                        <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="sponsorship-dealer" class="py-16 px-6 md:px-12 bg-white text-center">
-            <div class="container mx-auto max-w-2xl">
-                <h2 class="text-4xl font-bold text-gray-900 mb-6">Become a Luzz Pickleball Partner</h2>
-                <p class="text-xl text-gray-700 mb-8">Interested in becoming a dealer or seeking sponsorship for your pickleball event? Contact us to grow the pickleball community together!</p>
-                <a href="#contact-us-footer" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block shadow-lg hover:shadow-xl">Learn More</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-900 text-gray-300 py-12 px-6 md:px-12">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
-                <h4 class="text-white text-lg font-semibold mb-6">Products</h4>
-                <ul class="space-y-3">
-                    <li><a href="#" class="footer-link text-gray-400">Infinity Series</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Ultra Series</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Pro Series</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Pickleball Paddle Bags</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Pickleball Accessories</a></li>
+    
+                <ul id="desktop-menu" class="hidden md:flex space-x-8">
+                    <li><a href="#home" class="nav-link text-gray-700 font-medium">Home</a></li>
+                    <li><a href="#paddle-set-sale" class="nav-link text-gray-700 font-medium">Paddle Set Sale</a></li>
+                    <li><a href="#pickleball-paddle" class="nav-link text-gray-700 font-medium">Pickleball Paddle</a></li>
+                    <li><a href="#pickleball-bag" class="nav-link text-gray-700 font-medium">Pickleball Bag</a></li>
+                    <li><a href="#pickleball-accessories" class="nav-link text-gray-700 font-medium">Pickleball Accessories</a></li>
+                    <li><a href="#sponsorship-dealer" class="nav-link text-gray-700 font-medium">Sponsorship & Dealer</a></li>
+                </ul>
+            </nav>
+    
+            <div id="mobile-menu" class="hidden md:hidden bg-white mt-4 rounded-lg shadow-lg">
+                <ul class="flex flex-col space-y-2 p-4">
+                    <li><a href="#home" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Home</a></li>
+                    <li><a href="#paddle-set-sale" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Paddle Set Sale</a></li>
+                    <li><a href="#pickleball-paddle" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Pickleball Paddle</a></li>
+                    <li><a href="#pickleball-bag" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Pickleball Bag</a></li>
+                    <li><a href="#pickleball-accessories" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Pickleball Accessories</a></li>
+                    <li><a href="#sponsorship-dealer" class="block py-2 px-4 text-gray-700 font-medium hover:bg-gray-100 rounded-md">Sponsorship & Dealer</a></li>
                 </ul>
             </div>
-
-            <div>
-                <h4 class="text-white text-lg font-semibold mb-6">Customer Service</h4>
-                <ul class="space-y-3">
-                    <li><a href="#" class="footer-link text-gray-400">Search</a></li>
-                    <li><a href="#" class="footer-link text-gray-400" id="about-us-link-footer">About Us</a></li>
-                    <li><a href="#" class="footer-link text-gray-400" id="contact-us-link-footer">Contact Us</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">FAQ</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Track Your Order</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Warranty</a></li>
-                </ul>
+        </header>
+    
+        <main>
+            <section id="home" class="relative h-screen flex items-center justify-center text-center bg-gray-200 overflow-hidden">
+                <img src="[https://images.unsplash.com/photo-1634919599887-bca88873cbca?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI0NjA&ixlib=rb-4.0.3&q=80&w=1920](https://images.unsplash.com/photo-1634919599887-bca88873cbca?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI0NjA&ixlib=rb-4.0.3&q=80&w=1920)" alt="Pickleball Court" class="absolute inset-0 w-full h-full object-cover opacity-80">
+                <div class="relative z-10 p-6 max-w-4xl mx-auto">
+                    <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">Elevate Your Pickleball Game</h1>
+                    <p class="text-xl md:text-2xl text-gray-700 mb-8">Discover Luzz's premium collection of pickleball paddles and accessories, designed for superior performance and elegant style.</p>
+                    <a href="#pickleball-paddle" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block shadow-lg hover:shadow-xl">Explore Now</a>
+                </div>
+            </section>
+    
+            <section id="paddle-set-sale" class="py-16 px-6 md:px-12 bg-white">
+                <div class="container mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Pickleball Paddle Set Sale</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1681486655254-350232cb8942?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI3NzU&ixlib=rb-4.0.3&q=80&w=400](https://images.unsplash.com/photo-1681486655254-350232cb8942?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI3NzU&ixlib=rb-4.0.3&q=80&w=400)" alt="Paddle Set A" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Premium Pickleball Set</h3>
+                            <p class="text-gray-700 mb-4">Perfect for beginners and intermediate players. Includes 2 paddles and 4 balls.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱2,200.00 <span class="text-lg text-gray-500 line-through">₱2,750.00</span></p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
+                        </div>
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1628872043019-f36460651439?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI3OTY&ixlib=rb-4.0.3&q=80&w=400](https://images.unsplash.com/photo-1628872043019-f36460651439?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI3OTY&ixlib=rb-4.0.3&q=80&w=400)" alt="Paddle Set B" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pro Performance Set</h3>
+                            <p class="text-gray-700 mb-4">Designed for maximum performance, with T700 carbon paddles and a carry bag.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱4,400.00 <span class="text-lg text-gray-500 line-through">₱5,500.00</span></p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
+                        </div>
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1637855879803-6285c9731f6c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI4MTk&ixlib=rb-4.0.3&q=80&w=400](https://images.unsplash.com/photo-1637855879803-6285c9731f6c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI4MTk&ixlib=rb-4.0.3&q=80&w=400)" alt="Paddle Set C" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Family Fun Set</h3>
+                            <p class="text-gray-700 mb-4">4 paddles and 6 balls, ideal for family and friends.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱3,850.00 <span class="text-lg text-gray-500 line-through">₱4,950.00</span></p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="pickleball-paddle" class="py-16 px-6 md:px-12 bg-gray-100">
+                <div class="container mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Pickleball Paddles</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1681486655134-40945f999154?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI5MzU&ixlib=rb-4.0.3&q=80&w=300](https://images.unsplash.com/photo-1681486655134-40945f999154?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI5MzU&ixlib=rb-4.0.3&q=80&w=300)" alt="Luzz Pro Paddle" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Luzz Pro T700 Carbon</h3>
+                            <p class="text-gray-700 mb-4">Optimal power and precision for professional players.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱2,750.00</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">View Details</button>
+                        </div>
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1681486655211-c4795aa50721?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI5NjA&ixlib=rb-4.0.3&q=80&w=300](https://images.unsplash.com/photo-1681486655211-c4795aa50721?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI5NjA&ixlib=rb-4.0.3&q=80&w=300)" alt="Luzz Ultra Paddle" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Luzz Ultra Series</h3>
+                            <p class="text-gray-700 mb-4">Ultra-light design for enhanced speed and control.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱2,200.00</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">View Details</button>
+                        </div>
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1681486655299-30f0c7849486?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI5ODQ&ixlib=rb-4.0.3&q=80&w=300](https://images.unsplash.com/photo-1681486655299-30f0c7849486?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzI5ODQ&ixlib=rb-4.0.3&q=80&w=300)" alt="Luzz Beginner Paddle" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Luzz Beginner Paddle</h3>
+                            <p class="text-gray-700 mb-4">Easy-to-play, stable paddle, ideal for new players.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱1,375.00</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">View Details</button>
+                        </div>
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1681486655378-8128b2f3526a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzMwMDc&ixlib=rb-4.0.3&q=80&w=300](https://images.unsplash.com/photo-1681486655378-8128b2f3526a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzMwMDc&ixlib=rb-4.0.3&q=80&w=300)" alt="Luzz Infinity Paddle" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Luzz Infinity Series</h3>
+                            <p class="text-gray-700 mb-4">The perfect blend of feel and power.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱2,475.00</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="pickleball-bag" class="py-16 px-6 md:px-12 bg-white">
+                <div class="container mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Pickleball Bags</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1684322884105-428f36891c28?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxiYWd8ZW58MHx8fHwxNjk5NDczMTIx&ixlib=rb-4.0.3&q=80&w=400](https://images.unsplash.com/photo-1684322884105-428f36891c28?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxiYWd8ZW58MHx8fHwxNjk5NDczMTIx&ixlib=rb-4.0.3&q=80&w=400)" alt="Pickleball Tote Bag" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pickleball Tote Bag</h3>
+                            <p class="text-gray-700 mb-4">Stylish and convenient, with enough space for paddles and accessories.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱990.00</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
+                        </div>
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1684322884022-2d99c111155a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxiYWd8ZW58MHx8fHwxNjk5NDczMTQz&ixlib=rb-4.0.3&q=80&w=400](https://images.unsplash.com/photo-1684322884022-2d99c111155a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxiYWd8ZW58MHx8fHwxNjk5NDczMTQz&ixlib=rb-4.0.3&q=80&w=400)" alt="Pickleball Duffle Bag" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pickleball Duffle Bag</h3>
+                            <p class="text-gray-700 mb-4">Separate shoe compartment, ideal for all your practice sessions.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱1,540.00</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
+                        </div>
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1684322884213-5c47d18c134c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxiYWd8ZW58MHx8fHwxNjk5NDczMTY3&ixlib=rb-4.0.3&q=80&w=400](https://images.unsplash.com/photo-1684322884213-5c47d18c134c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxiYWd8ZW58MHx8fHwxNjk5NDczMTY3&ixlib=rb-4.0.3&q=80&w=400)" alt="Pickleball Backpack" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pickleball Backpack</h3>
+                            <p class="text-gray-700 mb-4">Ergonomic design, comfortable for travel.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱1,925.00</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="pickleball-accessories" class="py-16 px-6 md:px-12 bg-gray-100">
+                <div class="container mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Pickleball Accessories</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1634919620418-88125893c43b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzMzMDQ&ixlib=rb-4.0.3&q=80&w=300](https://images.unsplash.com/photo-1634919620418-88125893c43b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxlYmFsbHxlbnwwfHx8fDE2OTk0NzMzMDQ&ixlib=rb-4.0.3&q=80&w=300)" alt="Pickleballs" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pickleballs (3-Pack)</h3>
+                            <p class="text-gray-700 mb-4">High-quality, durable balls for indoor and outdoor play.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱330.00</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
+                        </div>
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1684324018150-2763431ef058?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxhY2Nlc3N8ZW58MHx8fHwxNjk5NDczMzI3&ixlib=rb-4.0.3&q=80&w=300](https://images.unsplash.com/photo-1684324018150-2763431ef058?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxhY2Nlc3N8ZW58MHx8fHwxNjk5NDczMzI3&ixlib=rb-4.0.3&q=80&w=300)" alt="Paddle Cover" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pickleball Paddle Cover</h3>
+                            <p class="text-gray-700 mb-4">Protect your paddle from scratches and impacts.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱192.50</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
+                        </div>
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1684324018274-9114b094140d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxhY2Nlc3N8ZW58MHx8fHwxNjk5NDczMzUx&ixlib=rb-4.0.3&q=80&w=300](https://images.unsplash.com/photo-1684324018274-9114b094140d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxhY2Nlc3N8ZW58MHx8fHwxNjk5NDczMzUx&ixlib=rb-4.0.3&q=80&w=300)" alt="Lead Tape" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Lead Tape for Weighting</h3>
+                            <p class="text-gray-700 mb-4">Customize your paddle's weight and balance.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱165.00</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
+                        </div>
+                        <div class="product-card p-6 text-center">
+                            <img src="[https://images.unsplash.com/photo-1684324018363-64815ca061f3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxhY2Nlc3N8ZW58MHx8fHwxNjk5NDczMzc0&ixlib=rb-4.0.3&q=80&w=300](https://images.unsplash.com/photo-1684324018363-64815ca061f3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8cGljayxhY2Nlc3N8ZW58MHx8fHwxNjk5NDczMzc0&ixlib=rb-4.0.3&q=80&w=300)" alt="Grip Tape" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Overgrip Tape</h3>
+                            <p class="text-gray-700 mb-4">Enhance grip and absorb sweat.</p>
+                            <p class="text-2xl font-bold text-gray-900 mb-4">₱110.00</p>
+                            <button class="btn-primary px-6 py-3 rounded-full font-semibold">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="sponsorship-dealer" class="py-16 px-6 md:px-12 bg-white text-center">
+                <div class="container mx-auto max-w-2xl">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Become a Luzz Pickleball Partner</h2>
+                    <p class="text-xl text-gray-700 mb-8">Interested in becoming a dealer or seeking sponsorship for your pickleball event? Contact us to grow the pickleball community together!</p>
+                    <a href="#contact-us-footer" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block shadow-lg hover:shadow-xl">Learn More</a>
+                </div>
+            </section>
+        </main>
+    
+        <footer class="bg-gray-900 text-gray-300 py-12 px-6 md:px-12">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-6">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-400">Infinity Series</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Ultra Series</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Pro Series</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Pickleball Paddle Bags</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Pickleball Accessories</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-6">Customer Service</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-400">Search</a></li>
+                        <li><a href="#" class="footer-link text-gray-400" id="about-us-link-footer">About Us</a></li>
+                        <li><a href="#" class="footer-link text-gray-400" id="contact-us-link-footer">Contact Us</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">FAQ</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Track Your Order</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Warranty</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-6">Policy</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-400">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Return & Refund Policy</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Shipping Policy</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Terms & Conditions of Service</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Intellectual Property Rights</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-6">Pickleball Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-400">Become a Dealer</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Sponsorship</a></li>
+                        <li><a href="#" class="footer-link text-gray-400">Pickleball Lessons</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div>
-                <h4 class="text-white text-lg font-semibold mb-6">Policy</h4>
-                <ul class="space-y-3">
-                    <li><a href="#" class="footer-link text-gray-400">Privacy Policy</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Return & Refund Policy</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Shipping Policy</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Terms & Conditions of Service</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Intellectual Property Rights</a></li>
-                </ul>
+    
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Luzz Pickleball. All rights reserved.</p>
             </div>
-
-            <div>
-                <h4 class="text-white text-lg font-semibold mb-6">Pickleball Resources</h4>
-                <ul class="space-y-3">
-                    <li><a href="#" class="footer-link text-gray-400">Become a Dealer</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Sponsorship</a></li>
-                    <li><a href="#" class="footer-link text-gray-400">Pickleball Lessons</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
-            <p>&copy; 2025 Luzz Pickleball. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // JavaScript for mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const desktopMenu = document.getElementById('desktop-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when a link is clicked (for smooth scrolling)
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+        </footer>
+    
+        <script>
+            // JavaScript for mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const desktopMenu = document.getElementById('desktop-menu');
+    
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
             });
-        });
-
-        // Placeholder for About Us and Contact Us links in footer
-        // In a real application, these would link to separate pages or sections
-        document.getElementById('about-us-link-footer').addEventListener('click', (e) => {
-            e.preventDefault();
-            // In a real app, you might navigate to an /about page or show a modal
-            console.log('Navigate to About Us page/section');
-            // For this landing page, we can scroll to the top or a general info section if it existed
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            alert('This would navigate to the About Us page!'); // Using alert for demonstration, replace with proper UI
-        });
-
-        document.getElementById('contact-us-link-footer').addEventListener('click', (e) => {
-            e.preventDefault();
-            // In a real app, you might navigate to a /contact page or show a contact form modal
-            console.log('Navigate to Contact Us page/section');
-            // For this landing page, we can scroll to the Sponsorship & Dealer section as a proxy
-            document.getElementById('sponsorship-dealer').scrollIntoView({ behavior: 'smooth' });
-            alert('This would navigate to the Contact Us page or show a contact form!'); // Using alert for demonstration, replace with proper UI
-        });
-    </script>
-</body>
-</html>
+    
+            // Close mobile menu when a link is clicked (for smooth scrolling)
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+    
+            // Placeholder for About Us and Contact Us links in footer
+            // In a real application, these would link to separate pages or sections
+            document.getElementById('about-us-link-footer').addEventListener('click', (e) => {
+                e.preventDefault();
+                // In a real app, you might navigate to an /about page or show a modal
+                console.log('Navigate to About Us page/section');
+                // For this landing page, we can scroll to the top or a general info section if it existed
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                alert('This would navigate to the About Us page!'); // Using alert for demonstration, replace with proper UI
+            });
+    
+            document.getElementById('contact-us-link-footer').addEventListener('click', (e) => {
+                e.preventDefault();
+                // In a real app, you might navigate to a /contact page or show a contact form modal
+                console.log('Navigate to Contact Us page/section');
+                // For this landing page, we can scroll to the Sponsorship & Dealer section as a proxy
+                document.getElementById('sponsorship-dealer').scrollIntoView({ behavior: 'smooth' });
+                alert('This would navigate to the Contact Us page or show a contact form!'); // Using alert for demonstration, replace with proper UI
+            });
+        </script>
+    </body>
+    </html>
