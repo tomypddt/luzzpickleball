@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTCar Philippines | Xe Chất - Bán Xe Cũ, VinFast, Dạy Lái</title>
+    <style>
+        /* CSS tối giản - Bạn có thể thay đổi màu sắc */
+        :root {
+            --primary: #2E86AB;
+            --dark: #1A1A1A;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .product-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>DTCar Philippines</h1>
+        <p>Chuyên bán xe cũ, xe VinFast, đào tạo lái xe</p>
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-grid">
+        <div class="product-card">
+            <h3>VinFast VF8</h3>
+            <p>Giá từ: $30,000</p>
+        </div>
+        <div class="product-card">
+            <h3>Toyota Camry 2020</h3>
+            <p>Giá từ: $20,000</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: var(--dark); color: white; text-align: center; padding: 20px;">
+        © 2023 DTCar - Liên hệ: info@dtcar-ph.com
+    </footer>
+</body>
+</html>
